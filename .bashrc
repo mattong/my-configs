@@ -123,10 +123,6 @@ fi
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
-
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
 # A two-line colored Bash prompt (PS1) with Git branch and a line decoration
 # which adjusts automatically to the width of the terminal.
 # Recognizes and shows Git, SVN and Fossil branch/revision.
@@ -214,6 +210,9 @@ alias linter='yarn prettier:fix && yarn run eslint --fix'
 alias nuke='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias systemd='systemctl'
 alias exercism='~/bin/exercism'
+alias slerpuk='heroku run "POOL_SIZE=2 iex -S mix" -a slerp-uk'
+alias controls='cd ~/slerp-controls'
+alias shop='cd ~/slerp-shop'
 
 source ~/.private_keys
 source ~/.ttc_env
@@ -247,3 +246,9 @@ pathappend () {
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 doge
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
