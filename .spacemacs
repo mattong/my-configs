@@ -322,6 +322,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   (golden-ratio-mode t)
 
+  (setq create-lockfiles nil)
+
   (setq-local indent-tab-mode nil)
   (setq-local web-mode-attr-indent-offset 2) ; web-mode
   (setq-local web-mode-code-indent-offset 2) ; web-mode, js code in html file
